@@ -1,0 +1,496 @@
+%-----------------------------------------------------------------------------
+% PACKAGES AND THEMES
+%-----------------------------------------------------------------------------
+
+\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+
+\usetheme{SimplePlus}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+%-----------------------------------------------------------------------------
+% TITLE PAGE
+%-----------------------------------------------------------------------------
+
+\title[short title]{Bezbednost Interneta}
+
+\subtitle{Neke diskusije o zaštiti lozinki}
+
+\author[Andrija] {Andrija Urošević}
+
+\institute[MATF] {
+Univerzitet u Beogradu\\
+Matematički fakultet
+}
+
+\date{April, 2022.}
+
+%-----------------------------------------------------------------------------
+% PRESENTATION SLIDES
+%-----------------------------------------------------------------------------
+
+\begin{document}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Pitanja}
+    \centering
+    Koliko vas je hakovano?\\ \vspace{1em}
+    Koliko vas je hakovalo?\\ \vspace{1em}
+    Koliko vas će hakovati?
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Pregled}
+    \tableofcontents
+\end{frame}
+
+%-----------------------------------------------------------------------------
+\section{Kako čuvati lozinke?}
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Čuvanje lozinki}
+
+    \begin{alertblock}{Ključno pitanje}
+        Pretpostavimo sledeći scenario: Razvijamo neku veb aplikaciju. Da bi
+        naša aplikacija funkcionisala zahteva sistem prijavljivanja radi
+        autentifikacije korisnika. Odlučili smo da autentifikaciju vršimo
+        preko lozinke.
+
+        \vspace{1em}
+
+        \textit{Kako čuvati lozinke u bazi podataka?}
+    \end{alertblock}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Otvoreni tekst}
+
+    \begin{block}{Otvoreni tekst}
+        Otvoreni tekst u kriptografiji predstavlja nešifrovanu informaciju.
+    \end{block}
+
+    \vspace{1em}
+
+    \begin{center}
+        \begin{tabular}{c|c}
+            username & password \\
+            \hline
+            nikola & password1 \\
+            marko & matrix \\
+            petar & yep59f\$4txwrr
+        \end{tabular}
+    \end{center}
+
+    \vspace{1em}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Pozitivno:
+            \pause
+            \begin{itemize}
+                \item lako se implementira
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Negativno:
+            \pause
+            \begin{itemize}
+                \item vidljive lozinke
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Šifrovanje lozinki}
+    \begin{block}{Šifrovanje}
+        \textit{Šifrovanje} je proces enkodiranja informacija. Tokom
+        šifrovanja originalna reprezentacija informacije (otvoreni tekst)
+        se konvertuje u alternativnu reprezentaciju koja se naziva
+        \textit{šifrat}.
+    \end{block}
+
+    \vspace{1em}
+
+    \begin{center}
+        \begin{tabular}{c|c}
+            username & rot13(password) \\
+            \hline
+            nikola & cnffjbeq1 \\
+            marko & zngevk \\
+            petar & lrc59s\$4gkjee
+        \end{tabular}
+    \end{center}
+
+    \vspace{1em}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Pozitivno:
+            \pause
+            \begin{itemize}
+                \item lozinke su skrivene
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Negativno:
+            \pause
+            \begin{itemize}
+                \item otvoreni tekst + šifrat $\implies$ ključ
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Heš funkcija}
+
+    \begin{block}{Heš funkcija}
+        \textit{Heš funkcija} je funkcija koja preslikava podatke proizvoljne
+        veličine u vrednosti fiksirane veličine. Vrednost koju dobijemo
+        primenom heš funkcije zovemo \textit{heš vrednosti} ili \textit{heš}.
+    \end{block}
+
+    \vspace{1em}
+
+    \begin{center}
+        \begin{tabular}{c|c}
+            username & md5(password) \\
+            \hline
+            nikola & 7c6a180b36896a0a8c02787eeafb0e4c \\
+            marko & 21b72c0b7adc5c7b4a50ffcb90d92dd6  \\
+            petar & 47ad898a379c3dad10b4812eba843601
+        \end{tabular}
+
+    \end{center}
+
+    \vspace{1em}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Pozitivno:
+            \pause
+            \begin{itemize}
+                \item heš funkcija nema inverz
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Negativno:
+            \pause
+            \begin{itemize}
+                \item \emph{rainbow} tabele
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Soljenje}
+
+    \begin{block}{Soljenje}
+        \textit{Soljenje} predstavlja dodavanje nasumičnih podataka ulaznom
+        podatku na kome se primenjuje heš funkcija.
+    \end{block}
+
+    \vspace{1em}
+
+    \begin{center}
+        \begin{tabular}{c|c|c}
+            username & salt & sha256(password+salt) \\
+            \hline
+            nikola & 3]iPP &
+            bbe64abee254782ee5eed1e9e9...\\
+            marko & PeRap & 9c09e1f111a3f526749099b9da... \\
+            petar & E54Fb & f0a92d959e539c9d9711ba77da...
+        \end{tabular}
+    \end{center}
+
+    \vspace{1em}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Pozitivno:
+            \pause
+            \begin{itemize}
+                \item \emph{rainbow} tabele ne funkcionišu
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \pause
+            Negativno:
+            \pause
+            \begin{itemize}
+                \item brzo računanje heš vrednosti (napad rečnikom)
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Dodatna poboljšanja}
+
+    \begin{itemize}
+        \item Biber tehnika (dodajemo nasumični podatak pri heširanju koji je
+            zajednički za sve korisnike)
+        \item Heširanje u iteracijama (nekoliko puta primenjujemo heš funkciju)
+        \item Spajanje više tehnika (so + biber + heš funkcija u iteracijama)
+        \item bcrypt\cite{pass3}
+    \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+\section{Menadžer lozinki}
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Menadžer lozinki}
+
+    \begin{alertblock}{Ključno zapažanje}
+        Kako broj usluga raste na Internetu, broj lozinki koje prosečan čovek
+        treba da upamti raste respektivno, sve do trenutka kada mnogi ljudi ne
+        mogu da upamte novu i jaku lozinku.
+
+        \vspace{1em}
+
+        Korisnici rešavaju ovaj problem na dva načina:
+        \begin{itemize}
+            \item Koriste istu lozinku za različite sajtove.
+            \item Koriste \textit{menadžer lozinki}.
+        \end{itemize}
+    \end{alertblock}
+
+    \pause
+
+    \begin{block}{Menadžer lozinki}
+        \textit{Menadžer lozinki} je program koji korisnicima pruža mogućnost
+        čuvanja, generisanja, i menadžment lozinki za lokalne aplikacije ili
+        Internet usluge.
+    \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Šta menadžer lozinki čini sigurnijim?}
+
+    \begin{columns}
+
+        \begin{column}{0.4\textwidth}
+            \begin{enumerate}
+                \item [A.1] Prednosti otvorenog k\^oda
+
+                    \begin{itemize}
+                        \item korisnici mogu prijaviti ranjive delove
+                        \item smanjuje se pritisak na programere
+                    \end{itemize}
+                \item [A.2] Mane otvorenog k\^oda
+                    \begin{itemize}
+                        \item neće svi korisnici prijaviti ranjive delove
+                    \end{itemize}
+            \end{enumerate}
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+            \begin{enumerate}
+                \item [B.1] Prednosti zatvorenog k\^oda
+                    \begin{itemize}
+                        \item potencijalna eksploatacija ranjivosti je smanjena
+                    \end{itemize}
+                \item [B.2] Mane zatvorenog k\^oda
+                    \begin{itemize}
+                        \item korisnik mora verovati kompaniji
+                        \item manji broj ljudi radi reviziju koda
+                    \end{itemize}
+            \end{enumerate}
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Teorijski dizajn dobrog menadžera lozinki}
+    \cite{passman1} preporučuju:
+
+    \begin{enumerate}
+            \pause
+        \item Prioritet je sigurnost, a ne slučajevi upotrebe.
+            \pause
+        \item Otvorenog k\^oda.
+            \pause
+        \item Master lozinka mora biti snažna, tj. mora da zadovoljava 2017
+            NIST standard.\cite{nist}
+            \pause
+        \item Funkcionalnost automatskog popunjavanja, zbog \emph{keylogger}-a.
+
+            \pause
+        \item Samozaključavanje nakon nekog vremena.
+    \end{enumerate}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+\section{CTF: Capture The Flag}
+%-----------------------------------------------------------------------------
+
+\begin{frame}{CTF: Capture The Flag}
+
+    \begin{block}{CTF (Capture The Flag)}
+        \textbf{CTF} je specijalna vrsta takmičenja u oblasti računarske
+        bezbednosti. Cilj takmičenja je osvojiti što više \textit{flag}-ova,
+        tako što timovi pronalaze rupe u sistemu, koje onda eksploatišu.
+        \textit{Flag} je obično oblika \texttt{FLAG\{neki\_tekst\}}
+    \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Vrste CTF-ova}
+
+    \begin{itemize}
+        \item \textbf{Jeopardy}: Timovi rešavaju unapred zadate zadatke.
+        \item \textbf{Attack-Defense}: Dva tima pokušavaju da eksploatišu
+            jedni druge, dok u isto vreme pokušavaju da se zaštite od napada.
+        \item \textbf{Mixed}: Varijacije na temu. (na primer: wargames).
+    \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Vrste CTF zadataka}
+
+    \begin{itemize}
+        \item crypto (Kriptografija)\pause
+        \item rev (Obrnuto inženjerstvo)\pause
+        \item pwn (Osvojiti pristup)\pause
+        \item stego (Steganografija)\pause
+        \item web (Eksploatacija veb aplikacija)\pause
+        \item misc (Razno)\pause
+        \item hardware (Eksploatacija hardvera)\pause
+        \item ...
+    \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Reference}
+    \footnotesize{
+        \begin{thebibliography}{99}
+            \bibitem[Boonkrong, 2012]{pass1} Sirapat Boonkrong (2012)
+                \newblock Security of Passwords
+                \newblock \emph{Information Technology Journal} 8(2),
+                112 -- 117
+
+            \bibitem[Vaadata, 2020]{pass2} Vaadata (2020)
+                \newblock How to Securely Store Passwords in Database?
+                \newblock \emph{Vaadata blog article}
+
+            \bibitem[Pravos and Mazieres, 1999]{pass3} Niels Pravos and
+                David Mazieres (1999)
+                \newblock A Future-Adaptable Password Scheme
+                \newblock \emph{In Preceedings of 1999 USENIX Annual Technical
+                Conference} 81 -- 92
+
+            \bibitem[Kioon, Wang, Shun, Das, and Shubra, 2013]{pass4} Ah Kioon,
+                Mary Cindy and Wang, Zhao Shun and Deb Das, Shubra (2013)
+                \newblock Security Analysis of MD5 Algorithm in Password
+                Storage
+                \newblock Instruments, Measurement, Electronics and
+                Information Engineering,
+                \emph{Trans Tech Publications Ltd} 347(10),
+                2706 -- 2711
+
+        \end{thebibliography}
+    }
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Reference}
+    \footnotesize{
+        \begin{thebibliography}{99}
+
+            \bibitem[Luevanos, Elizarraras, Hirschi, and Yeh, 2017]{passman1}
+                C. Luevanos, J. Elizarraras, K. Hirschi and J. Yeh (2017)
+                \newblock Analysis on the Security and Use of Password Managers
+                \newblock \emph{18th International Conference on Parallel and
+                Distributed Computing, Applications and Technologies (PDCAT)},
+                17 -- 24
+            \bibitem[NIST 800-63A]{nist} Paul A. Grassi, James L. Fenton,
+                Naomi B. Lefkovitz, Yee-Yin Choong, Jamie M. Danker,
+                Mary F. Theofanos (2017)
+                \newblock Digital Identity Guidelines: Enrollment and Identity
+                Proofing Requirements
+                \newblock \emph{NIST Special Publication 800-63A}
+
+        \end{thebibliography}
+    }
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}{Reference}
+    \footnotesize{
+        \begin{thebibliography}{99}
+
+            \bibitem[CTFtime.org]{ctftime} CTFtime
+                \newblock All about CTF (Capture The Flag)
+                \newblock \emph{\url{ctftime.org}}
+
+            \bibitem[OverTheWire: Wargames]{overthewire} OverTheWire
+                \newblock We're hackers, and we are good-looking.
+                We are the 1\%.
+                \newblock \emph{\url{overthewire.org}}
+
+        \end{thebibliography}
+    }
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\begin{frame}
+
+    \Huge{\centerline{\textbf{I šta ćemo sad?}}}
+
+    \vspace{2em}
+
+    \pause
+    \small{\centerline{\url{https://capturetheflag.withgoogle.com}}}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------
+
+\end{document}
