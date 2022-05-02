@@ -9,6 +9,7 @@ Teme:
 5) Internet prevare i zavisnost od interneta
 6) Bezbednost interneta
 7) Privatnost na internetu
+8) Informaticka pismenost u Srbiji
 
 Obaveze studenata na kursu (za svaku pojedinacnu obavezu prag je 40% od broja poena):
 
@@ -18,7 +19,7 @@ Obaveze studenata na kursu (za svaku pojedinacnu obavezu prag je 40% od broja po
 - - u okviru jedne grupe studenti materijal dele u medjusobnom dogovoru
 - - [10] kreiranje kratkih video materijala (snimanje izlaganja na casu ili pravljenje snimka pre casa za one koji ne mogu da prisustvuju)
 - - [10] kreiranje pitanja za proveru znanja i diskusiju (nekoliko pitanja sa ponudjenim odgovorima i nekoliko bez ponudjenih odgovora)
-- - ?? da li koristiti google formulare za kreiranje pitanja?
+- - popunjavanje google formulara 
 - - [10] davanje konstruktivnih komentara kolegama (iz grupe) u cilju poboljsanja pitanja i stila predavanja/spremanja prezentacije
 -
 - [30] usmeni
