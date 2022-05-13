@@ -1,0 +1,205 @@
+%-----------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%-----------------------------------------------------------------------------
+\documentclass{beamer}
+\usepackage[size=a3,orientation=portrait,scale=1.5]{beamerposter}
+\usetheme{LLT-poster}
+%\usecolortheme{ComingClean}
+\usecolortheme{Entrepreneur}
+%\usecolortheme{SimplePlus}
+%\usecolortheme{ConspicuousCreep}  %% VERY garish.
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[scaled=0.92]{inconsolata}
+\usepackage[libertine]{newtxmath}
+\usepackage[serbian]{babel}
+\usepackage{pgfplots}
+
+%-----------------------------------------------------------------------------
+%	TITLE AND AUTHOR
+%-----------------------------------------------------------------------------
+
+\author[andrija.urosevic@protonmail.com]{Andrija Urošević}
+\title{Capture The Flag (CTF)\\  CTF kao uvod u računarsku bezbednost}
+\institute{Univerzitet u Beogradu\\ Matematički fakultet}
+
+%-----------------------------------------------------------------------------
+%	POSTER
+%-----------------------------------------------------------------------------
+\begin{document}
+
+\begin{frame}[fragile]
+    \centering
+
+%-----------------------------------------------------------------------------
+
+    \begin{block}
+        {Da li se CTF može koristiti kao metod gamifikacije pri učenju
+        računarske bezbednosti?}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\textwidth]{Slike/ctf_gami.png}
+            \caption{Gamifikacija učenja računarske
+            bezbednosti}\label{fig:ctfgami}
+        \end{figure}
+    \end{block}
+
+%-----------------------------------------------------------------------------
+%   COLUMNS
+%-----------------------------------------------------------------------------
+
+    \begin{columns}[T]
+
+%-----------------------------------------------------------------------------
+%   FIRST COLUMNS
+%-----------------------------------------------------------------------------
+        \begin{column}{.46\textwidth}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{Pregled}
+                \begin{itemize}
+                    \item CTF takmičenja
+                    \item Znanja i veštine koje se stiču kroz CTF
+                    \item Problemi u CTF modelu
+                    \item CTF na univerzitetskim kursevima
+                \end{itemize}
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{CFT takmičenja}
+                \begin{description}
+                    \item [CTF] (Capture The Flag) je takmičenje u oblasti
+                        računarske bezbednosti. Cilj takmičenja je pronaći
+                        \emph{flag}-ove u nekom okruženju.
+                    \item [Flag] je tipično neki string karaktera.
+                \end{description}
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{Znanja i veštine koje se stiču kroz CTF}
+                \begin{figure}
+                    \centering
+                    \begin{tikzpicture}[scale=1]
+                        \begin{axis}[
+                            y=1cm,
+                            xbar,
+                            title={Distribucija oblasti znanja u CTF-u},
+                            symbolic y coords={Društvo,
+                                               Organizacija,
+                                               Ljudi,
+                                               Sistemi,
+                                               Konekcije,
+                                               Komponente,
+                                               Softver,
+                                               Podaci
+                            },
+                            legend pos = south east,
+                            nodes near coords,
+                            xmax=50
+                            ]
+                            \addplot+ coordinates {(2.96,Društvo)
+                                                   (9.86,Organizacija)
+                                                   (8.23,Ljudi)
+                                                   (12.72,Sistemi)
+                                                   (19.66,Konekcije)
+                                                   (8.94,Komponente)
+                                                   (10.02,Softver)
+                                                   (27.61,Podaci)
+                            };
+                            \addlegendentry{Jeopardy}
+                            \addplot+ coordinates {(2.17,Društvo)
+                                                   (11.38,Organizacija)
+                                                   (9.18,Ljudi)
+                                                   (10.96,Sistemi)
+                                                   (32.68,Konekcije)
+                                                   (2.08,Komponente)
+                                                   (14.72,Softver)
+                                                   (16.83,Podaci)
+                            };
+                            \addlegendentry{Attack-Defence}
+                        \end{axis}
+                    \end{tikzpicture}
+                    \centering
+                    \caption{Distribucija oblasti znanja u $15 879$
+                        \emph{jeopardy} i $86$ \emph{attack-defense}
+                        \emph{writeup}-ova.}\label{fig:ctf_ka}
+                \end{figure}
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+        \end{column}
+
+%-----------------------------------------------------------------------------
+%   SECOND COLUMN
+%-----------------------------------------------------------------------------
+        \begin{column}{.46\textwidth}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{Problemi u CTF modelu}
+                \begin{itemize}
+                    \item Težina igre
+                    \item Relacija između dizajna zadataka i njegove
+                        uspešnosti pri rešavanju
+                    \item Dokaz o kvalitetu
+                    \item Poeni i njihov obrnuti efekat na takmičare i
+                        organizatore
+                    \item Infrastruktura zadataka
+                    \item Dvosmisleni zadaci
+                \end{itemize}
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{CTF na univerzitetskim kursevima}
+                \begin{table}[!h]
+                    \centering
+                    \begin{tabular}{|c|c|c|}
+                        \hline
+                        \textbf{Osobina} & \textbf{CTF} & \textbf{CCTF} \\
+                        \hline
+                        \hline
+                        Pripremanje & nekoliko meseci & nekoliko nedelja \\
+                        Trajanje & 1-2 dana & 2 časa \\
+                        Uloge timova & crveni ili plavi & crveni i plavi \\
+                        Uparivanje timova & svi na sve & parovi \\
+                        Učestalost & jednom godišnje & 2-3 puta po semestru \\
+                        Analiza & retko & uvek \\
+                        Težina & stručni & početni do srednji \\
+                        \hline
+                    \end{tabular}
+                    \caption{Upoređivanje CTF-a i CCTF-a.}\label{tab:cctf}
+                \end{table}
+                \begin{itemize}
+                    \item Samopouzdanje studenata će se povećati učestvovanjem
+                        u CTF-u.
+                    \item Studenti će uživati u CTF-u.
+                    \item Studenti će steći praktične veštine učestvovanjem
+                        u CTF-u.
+                    \item Učestvovanje u CTF potkrepljuje teorijske koncepte.
+                \end{itemize}
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+            \begin{block}{Zaključak}
+                Gamifikacija u obliku CTF-a se pokazuje kao veoma dobar alat
+                za učenje o računarskoj bezbednosti, uz savladive probleme
+                koje donosi.
+            \end{block}
+
+%-----------------------------------------------------------------------------
+
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+\end{document}
