@@ -1,0 +1,32 @@
+% To modify the size of the page:
+\usepackage[dvips,a0paper,landscape,centering,left=5cm,right=5cm,top=5cm, bottom=5cm]{geometry}
+\usepackage[english, serbian c]{babel}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{color,xcolor}
+\usepackage{float}
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{graphicx}           % Include figure files.
+\usepackage{anyfontsize}
+\usepackage{setspace}
+\usepackage{lipsum}
+% Colors
+% -------
+\usepackage[immediate]{silence}
+\WarningFilter[temp]{latex}{Command} % silence the warning
+\definecolor{azulcielo}{RGB}{227,243,248}
+
+\newcommand\Mark[1]{\textsuperscript#1}
+\pagestyle{empty}
+
+\def\to{\rightarrow}
+\usepackage{geometry}
+\usepackage{layout}
+\usepackage{url}
+\usepackage[pdftex, pdfborderstyle={/S/U/W 0}]{hyperref}
+\usepackage{csquotes}
+\usepackage[backend=biber, style=ieee,language=auto]{biblatex}
+\addbibresource{bibliography.bib}
+
+\graphicspath{{media/images/}}
+\DeclareGraphicsExtensions{.jpeg,.png,.jpg}
