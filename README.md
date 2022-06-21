@@ -29,8 +29,9 @@ Obaveze studenata na kursu (za svaku pojedinacnu obavezu prag je 40% od broja po
 -
 - [40 ukupno] seminarski rad
 - - biranje teme rada
+- - osnovna referenca u radu mora biti iz nekog naucnog casopisa
 - - [20] izrada prezentacije (jasnoca prezentacije, lako za pracenje, jasno izlaganje, lepo obrazlozeno)
-- - [20] izrada pisanog seminarskog rada (gramaticki ispravno, proverene cinjenice, sredjene reference, dobra podela po poglavljima,...)
+- - [20] izrada pisanog seminarskog rada (gramaticki ispravno, proverene cinjenice, sredjene reference, dobra podela po poglavljima, vizuelno pregledan rad...)
 - - odbrana rada na casu
 -
 - U toku kursa se ocekuje stalna interakcija izmedju studenata, kako kroz uzivo komunikaciju na casu, tako i kroz popunjavanje online formulara i slanja konstruktivnih komentara
