@@ -23,15 +23,16 @@ Obaveze studenata na kursu (za svaku pojedinacnu obavezu prag je 40% od broja po
 - - [10] davanje konstruktivnih komentara kolegama (iz grupe) u cilju poboljsanja pitanja i stila predavanja/spremanja prezentacije
 -
 - [30] usmeni
-- - [ako prisustvujete] ako aktivno ucestvujete u diskusijama na casu i popunjavate online formulare za sva predavanja (i dajete konstruktivne komentare) dobijate procentualno onoliko poena na koliko casova ste ucestvovali
+- - [ako prisustvujete] ako aktivno ucestvujete u diskusijama na casu i popunjavate online formulare za sva predavanja (i dajete konstruktivne komentare) dobijate procentualno onoliko poena na koliko casova ste ucestvovali (maksimalno mozete da osvojite 70 poena ali se racunaju poeni do 60, imate pravo da jedne nedelje uopste ne prisustvujete predavanjima i ne dajete komentare)
 - - [ako ne prisustvujete] ako ne prisustvujete casovima ili ne ucestvujete u diskusijama, dobijate _test_ iz oblasti koje su predjene na predavanjima
 - - [po potrebi] mozete polagati test ako zelite da povecate broj poena skupljen u toku predavanja
 -
 - [40 ukupno] seminarski rad
 - - biranje teme rada
 - - osnovna referenca u radu mora biti iz nekog naucnog casopisa
-- - [20] izrada prezentacije (jasnoca prezentacije, lako za pracenje, jasno izlaganje, lepo obrazlozeno)
+- - [15] izrada prezentacije (jasnoca prezentacije, lako za pracenje, jasno izlaganje, lepo obrazlozeno)
 - - [20] izrada pisanog seminarskog rada (gramaticki ispravno, proverene cinjenice, sredjene reference, dobra podela po poglavljima, vizuelno pregledan rad...)
+- - [5] uraditi poster koji predstavlja Vas seminarski rad
 - - odbrana rada na casu
 -
 - U toku kursa se ocekuje stalna interakcija izmedju studenata, kako kroz uzivo komunikaciju na casu, tako i kroz popunjavanje online formulara i slanja konstruktivnih komentara
