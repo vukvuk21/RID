@@ -70,7 +70,7 @@ Od 90-tih, format CTF-a se premešta na računare i Internet.
 Cilj takmičenja je pronaći \emph{flag}-ove u nekom okruženju. Okruženje može
 biti različitog opsega i formata, ali generalno pronađen \emph{flag} je dokaz
 rešenog zadatka (npr.\ pristupljeno je skrivenim podacima ili bazi). Okruženje 
-može  biti jedan veb domen ili može biti mreža računara na većoj skali.
+može biti jedan veb domen ili može biti mreža računara na većoj skali.
 
 \emph{Flag} je tipično neki string karaktera, čiju specifikaciju daju
 organizatori takmičenja. Specifikacija mora biti jasna svim učesnicima kako 
@@ -156,8 +156,8 @@ CSEC2017 definiše osam oblasti znanja u računarskoj bezbednosti.
         napade.
     \item \emph{Bezbednost sistema} sadrži kontrolu pristupa, i etičko 
         hakovanje (eng.\ \emph{pen testing}).
-    \item \emph{Bezbednost ljudi} se odnosi na čuvanju identiteta, podataka, 
-        i privatnosti. Sadrži socijalno inženjerstvo i svesnost o računarskoj 
+    \item \emph{Bezbednost ljudi} se odnosi na čuvanje identiteta, podataka, 
+        i privatnost. Sadrži socijalno inženjerstvo i svesnost o računarskoj 
         bezbednosti.
     \item \emph{Organizaciona bezbednost} se fokusira na menadžment rizika, 
         bezbednosne polise, i upravljanje incidentima na nivou organizacije.
@@ -269,7 +269,7 @@ CTF se vrti oko računarske bezbednosti, ali je u suštini slobodan za bilo koje
 druge oblasti. Zbog toga CTF zadatak može testirati dosta nepoznate oblasti 
 znanja, koje se samo delimično mogu naći u literaturi, dokumentaciji, ili čuti 
 na nekom kursu ili radionici. Dobra strana slobode koju CTF-ovi pružaju je u 
-tome što otvara nove teme i uzdiže bezbednost na veći nivo. 
+tome što otvara nove teme i uzdiže bezbednost na viši nivo. 
 
 Sama struktura CTF zadataka se svodi na ``sve ili nista'', tj.\ nije moguće
 parcijalno rešiti neki zadatak. To otvara mogućnosti za dalje istraživanje, i
@@ -283,8 +283,8 @@ Pored svih uspešnih stvari koje donosi CTF kao platforma za učenje i proveru
 znanja, postoje problemi koji narušavaju ovaj model. Jedan od najvećih
 probleme je uvođenje novih ljudi u takmičenja.\cite{ctf_chung} Novi takmičari
 počinju sa takmičenjem po preporuci. Oni veoma retko nastavljaju sa igranjem
-CTF-a ukoliko ne mogu da reše ni jedan zadatak. Ovo može biti veoma 
-frustrirajuće, te mnogi odustaju od takmičenja.
+CTF-a ukoliko ne uspevaju da reše ni jedan zadatak. Ovo može izazvati 
+frustracije, te mnogi odustaju od takmičenja.
 
 Sledeće podsekcije sadrže neke probleme koje su uočili Čang i Koen 
 \cite{ctf_chung} u višegodišnjoj organizacije CTF takmičenja.
@@ -304,9 +304,7 @@ pritisak na novog takmičara. Zbog toga je veoma teško početi sa takmičenjem,
 čak i za one sa dobrim tehničkim predznanjem.
 
 %-----------------------------------------------------------------------------
-\subsection{
-    Relacija izmedju dizajna zadataka i njegove uspešnosti pri rešavanju
-}
+\subsection{Relacija između dizajna zadataka i njegove uspešnosti pri rešavanju}
 %-----------------------------------------------------------------------------
 
 Uspešan CTF događaj je onaj koji ima balans između učenja i provere znanja.
@@ -329,8 +327,8 @@ znanja, poeni predstavljaju lokalnu skalu težine zadataka tog CTF događaja.
 
 Često organizatori pokušavaju da modifikuju zadatke tako da oni postanu teži
 dodavanjem veštačkih konstrukcija, koji čine zadatak ``upekljanijim'' nego
-što on zapravo jeste. Ovakve stvari su dizajnirane da namerno frustriraju
-takmičare, i veruje se da će mali broj takmičara uspeti da ih reši.
+što on zapravo jeste. Ovakve konstrukcije su dizajnirane da namerno izazovu 
+frustracije takmičara, i veruje se da će mali broj takmičara uspeti da ih reši.
 Ove tehnike otežavanja dovode do toga da zadatak ostane nerešen ili rešen
 od strane malog broja takmičara, jer zapravo uključuje faktor sreće. 
 
@@ -360,10 +358,10 @@ svaki CTF događaj ova faza je drugačija. Jedan primer može biti u tome
 da organizatori između sebe dele zadatke i pokušavaju da reše tuđi zadatak.
 Organizatori koji rešavaju zadatke direktno mogu da revidiraju zadatak, i
 da daju povratne informacije o tome kako ga popraviti. Onda započinje novi
-krug razvoja zadataka, koja se sastoji u poboljšavanju zadataka.
+krug razvoja zadataka, koja se sastoji u poboljšanju trenutnih zadataka.
 
 Mnogi CTF događaji zanemaruju ovu fazu, ili joj ne pridaju veliki značaj.
-To dovodi do nerešivih zadataka, neadekvatno konfigurisana infrastrukture,
+To dovodi do nerešivih zadataka, neadekvatno konfigurisane infrastrukture,
 i zadataka čiji poeni ne reflektuju njihovu težinu.
 
 %-----------------------------------------------------------------------------
@@ -388,7 +386,7 @@ je trenutno nerešivi problem.
 Veb sajt se obično koristi za interakciju sa takmičarima. Veb sajt pruža 
 zadatke, bodovanje, i proveru \emph{flag}-ova. Nefunkcionalni veb sajtovi
 su jedan od najčešćih problema. Neki primeri: (1) nemogućnost učitavanja,
-(2) ključeve je moguće pronaći grubom silom, (3) takmičari ostvaruju 
+(2) \emph{flag}-ove je moguće pronaći grubom silom, (3) takmičari ostvaruju 
 proizvoljan broj poena.
 
 Pre samog CTF događaja organizatori treba da testiraju sve moguće
@@ -409,7 +407,7 @@ sam tok rešavanja ne navodi do pravog rešenja. Ako spojimo ove dve činjenice
 dobijamo dvosmislene zadatke koji se jedino mogu rešiti uz faktor sreće.
 Ovakvi zadaci nastaju jer im se pridaje malo pažnje na temu i priču koju 
 nosi sam zadatak. Zbog toga svaki zadatak mora imati svoj opis koji pruža
-korisne informacije, zajedno sa navođenjem i uverivanjem takmičara da je na 
+korisne informacije, zajedno sa navođenjem i uveravanjem takmičara da je na 
 pravom putu.
 
 %-----------------------------------------------------------------------------
@@ -421,8 +419,8 @@ Jedan od glavnih aspekata CTF takmičenja je u nadmudrivanju protivnika. Ali na
 bezbednosti. Jedan rešenje predlažu Mirković i Piterson \cite{ctf_class} sa
 svojom verzijom CTF-a: \emph{Class Capture The Flag} (CCTF). Naime, CCTF
 zahteva minimalno dodatnog vremena od studenata, minimalno rada na 
-osmišljanju zadata od strane profesora i saradnika u nastavi, dok u isto
-vreme uključuju studente u timski rad simuliranjem realnog scenaria.
+osmišljanju zadataka od strane profesora i saradnika u nastavi, dok u isto
+vreme uključuju studente u timski rad simulacijom realnog scenarija.
 Svaki CCTF zadatak se fokusira na jednu oblast koja se obrađuje na datom 
 kursu. Ovo doprinosi primeni znanja koje je student stekao tokom predavanja.
 Nakon svakog CCTF događaja, vrši se analiza sa studentima o tome šta su
@@ -435,7 +433,7 @@ događaja.
 
 CCTF se za razliku od tradicionalnog CTF-a održava na manjoj skali. Razlog 
 toga je okruženje u kome se on izvršava. Naime, CCTF ima neke jedinstvene
-osobine koje ga čine pogodnim za univerzitetske kurseve. Razlike izmedju
+osobine koje ga čine pogodnim za univerzitetske kurseve. Razlike između
 CTF-a i CCTF-a su date na tabeli \ref{tab:cctf}. U nastavku su opisane neke 
 osobine koje CCTF poseduje:
 
@@ -560,11 +558,11 @@ CTF zadataka na univerzitetskim kursevima nam daju Vikopal i dr.\
 %-----------------------------------------------------------------------------
 
 \begin{enumerate}
-    \item Videli smo da formalni metodi učenja (kursevi, seminari, master 
+    \item Videli smo da se formalni metodi učenja (kursevi, seminari, master 
         studijski programi, itd.) i neformalni metodi učenja (CTF takmičenja) 
         u velikoj meri poklapaju po oblastima znanja koje definiše CSEC2017. 
         Naime, oba metoda pokazuju da se fokusiraju na određene oblasti 
-        znanja. Ovo ima smisla kako baš te oblasti znanja primarne.
+        znanja. Ovo ima smisla kako su baš te oblasti znanja primarne.
     \item Dalje, uvideli smo da CTF takmičenja donose jako puno problema 
         takmičarima kao i organizatorima takmičenja. Novi takmičari retko 
         nastavljaju sa takmičenjima, jer su zadaci veoma teški. Organizatori 
