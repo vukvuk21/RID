@@ -21,7 +21,7 @@
 \maketitle
 
 \abstract{
-Ovaj rad se bavi terminima bezbednosti na internetu ({\em Cybersecurity})  i njegovom podgranom Etičko hakovanje. Obrađeni su osnovni principi cybersecuritija, sta je to u suštini, kao i osvrt na to šta je etičko hakovanje, čime se bavi i različiti tipovi hakera. 
+Ovaj rad se bavi terminima bezbednosti na internetu ({\em Cybersecurity})  i njegovom podgranom Etičko hakovanje. Obrađeni su osnovni principi cybersecuritija, šta je to u suštini, kao i osvrt na to šta je etičko hakovanje, čime se bavi i kakvi tipovi hakera postoje. 
 
 \tableofcontents
 
@@ -38,13 +38,13 @@ Neki od različitih tipova napada na internetu su:
 \item \textbf{Zlonamerni programi ({\em Malware})} - kao što su programi koji traže otkup {\em ransomware},  dozvoljavaju pristup {\em RAT - remote access tools}, trojanci {\em Trojan viruses}...
 \item \textbf{DDos napadi ({\em Distributed denial-of-service})} - napadi na internet tačke gde je u cilju preopterećenje i skidanje tačke sa interneta
 \item \textbf{DNS napadi ({\em Domain name system})} - promene u provajderu ip adresa na osnovu naziva stranica i time se korisnik može proslediti na bilo koji sajt
-\item \textbf{Kripto majneri ({\em Cryptojacking})} - instaliranje kripto majnera na uređaj
+\item \textbf{Kripto majneri ({\em Cryptojacking})} - instaliranje kripto majnera na uređaj\cite{whatiscybersec}
 \end{itemize}
-\cite{whatiscybersec}
 
-Skoro svaki sistem može biti žrtva napada na internetu, a hakerima najinteresantniji su svakako finansijski sistemi zbog mogućnosti zarade. Tako da su nebrojano puta bile hakovane velike finansijske institucije poput SWIFT-a, investicionih banaka i slično. Takođe, sajtovi i aplikacije koji dozvoljavaju plaćanje i čuvanje podataka o karticama su na meti, zbog lakog prebacivanja novca, ostvarivanja kupovina na drugim sajtovima kao i prodaje podataka na crnom tržistu.
 
-Od pojave interneta, sa razvojem digitalizacije, pojam{\em cybersecurity} postaje sastavni deo ličnog i poslovnog života. 70- tih godina, uglavnom je bio rezervisan samo za ljude koji su se time bavili, sve do masovnog širenja interneta, gde se sa povećanjem ''povezanosti'' povećava i mogućnost napada. Tada nije bilo nekih velikih pretnji jer su kompjuteri i internet bili u razvoju i lako je bilo pronaći bezbednosne propuste. Najčešći napadi tada su bili tako što čovek iznutra pristupi poverljivom dokumentu. 
+Skoro svaki sistem može biti žrtva napada na internetu, a hakerima su najinteresantniji svakako finansijski sistemi zbog mogućnosti zarade. Tako da su nebrojano puta bile hakovane velike finansijske institucije poput SWIFT-a, investicionih banaka i slično. Takođe, sajtovi i aplikacije koji dozvoljavaju plaćanje i čuvanje podataka o karticama su na meti, zbog lakog prebacivanja novca, ostvarivanja kupovina na drugim sajtovima kao i prodaje podataka na crnom tržistu.
+
+Od pojave interneta, sa razvojem digitalizacije, pojam{\em cybersecurity} postaje sastavni deo ličnog i poslovnog života. 70- tih godina, uglavnom je bio rezervisan samo za ljude koji su se time bavili, sve do masovnog širenja interneta, gde se sa povećanjem ''povezanosti'' povećava i mogućnost napada. Tada nije bilo nekih velikih pretnji jer su kompjuteri i internet bili u razvoju i lako je bilo pronaći bezbednosne propuste. Najčešći napadi tada su bili izvršeni tako što čovek iznutra pristupi poverljivom dokumentu. 
 1971. godine se pojavio prvi virus nazvan{\em Creeper}. Napravio ga je Bob Thomas i smatra se prvim kompjuterskim crvom.
 Godinu dana kasnije je razvijen prvi antivirusni program nazvan {\em Reaper}. Napravljen od strane Ray Tomlinson, on je mogao da se kreće kroz tadašnju internet mrežu ({\em ARPANET}) i da pronalazi i uništava virus {\em Creeper}. 
 Između 1986. i 1987. godine, grupa nemačkih hakera je izvela prvi zabeležen slučaj internet špijunaže. Oni su upali u sisteme američke bezbednosti, fakulteta i vojnih baza i prikupili informacije koje su prodali KGB-u.
@@ -60,8 +60,8 @@ Kako bi se zaštitili od napada, ceo proces je podeljen na 4 faze:
 \item \textbf{Identifikacija} - treba videti koji delovi su rizični i rangirati ih. U to ne spada samo fizička infrastruktura, već i procesi kroz koje ljudi imaju interakciju sa tom infrastrukturom.
 \item \textbf{Zaštita} - zaštititi delove koji su rizični. Najnovije verzije korišćene tehnologije i njihova redovna nadogradnja su najbolji način da se brzo i jednostavno reše potencijalne sigurnosne brige. Takođe pojedini uređaji imaju mogućnost samonadogradnje, gde se mogu nadograditi automatski bez interakcije sa korisnikom.
 \item \textbf{Detekcija} - saznati da se desio sigurnosni proboj. Mrežni log fajlovi i sistemi za nadgledanje mreže omogućavaju kompanijama da nadgledaju tok podataka i neautorizovane pristupe mreži. Detekcioni sistem takođe treba da ima mogućnost uzbune i slanja izveštaja. 
-\item \textbf{Reakcija} - reagovati na detektovan sigurnosni proboj i ako je naneta šteta, ispraviti je. Najvažniji deo oporavka u slučaju napada je zaštita informacija od značaja. Treba preduzeti mere koje će sprečiti budući napad uz što manji uticaj na normalan rad uređaja.
-\end{itemize} \cite{cyberphases}
+\item \textbf{Reakcija} - reagovati na detektovan sigurnosni proboj i ako je naneta šteta, ispraviti je. Najvažniji deo oporavka u slučaju napada je zaštita informacija od značaja. Treba preduzeti mere koje će sprečiti budući napad uz što manji uticaj na normalan rad uređaja.\cite{cyberphases}
+\end{itemize} 
 
 \begin{figure}[h!]
 	\begin{center}
@@ -77,17 +77,18 @@ Kako bi se zaštitili od napada, ceo proces je podeljen na 4 faze:
 
 \section{Hakovanje uopšteno}
 \label{sec:hakovanje}
-Termin haker se koristio za osobe koji su svojim znanjem i veštinama prepravljali sisteme i time povećavali njihovu efikasnost i dozvoljavali im da multi taskuju. 
+Termin haker se koristio za osobe koji su svojim znanjem i veštinama prepravljali sisteme i time povećavali njihovu efikasnost i dozvoljavali im da multitaskuju. 
 Danas taj termin opisuje programere koji upadaju u sisteme tako što iskorišćavaju bagove i sigurnosne propuste.
-Postoji tri različite grupe hakera i veoma je bitno napraviti razliku između njih. Uglavnom kada se govori o hakerima misli se na pojedince čije se radnje smatraju kriminalnim, ali postoje i oni drugi.
+Postoje tri različite grupe hakera i veoma je bitno napraviti razliku između njih. Uglavnom kada se govori o hakerima misli se na pojedince čije se radnje smatraju kriminalnim, ali postoje i oni drugi.
 
 \begin{itemize}
 \item \textbf{Etički hakeri ({\em White hat hacker})} - radnici kompanija koji imaju odgovarajuće znanje i koriste ga za dobrobit kompanije, odnosno omogućavaju kompaniji otpornost na hakere drugih vrsta. Glavna stvar koja ih razlikuje od ostalih vrsta hakera je to što oni imaju dozvolu kompanije za hakovanje. Vlasnici su ti koji su ih zaposlili i glavni cilj etičkih hakera je pronalaženje bezbednosnih propusta i mana u aplikacijama i sistemima.
 \item \textbf{Zlonamerni hakeri ({\em Black hat hacker})} - pišu viruse i koriste ih kako bi upali u sisteme bez dozvole vlasnika sistema. Oni uglavnom kradu podatke i prodaju ih, pa su samim tim velika pretnja po sisteme. Rade ili pojedinačno ili u grupama i načini hakovanja postaju sve kreativniji iz godine u godinu. Mogu uništiti kompanije tako što objave poverljive podatke ili zahtevajući ogromne količine novca kako ne bi objavili te podatke.
-\item \textbf{Hakeri iz sive zone ({\em Gray gat gacker})} - nešto između prethodna dva tipa, oni traže bezbednosne propuste i kada ih nađu oni obaveštavaju vlasnike sistema o njima i zahtevaju naknadu. Po tome su sličniji etičkim hakerima, samo je razlika u tome što oni nemaju dozvolu za traženje propusta, odnosno nisu zaposleni u tim kompanijama. A problem nastaje najčešće ukoliko vlasnik ne želi da plati naknadu, pa informacije o propustima ''isplivaju'' na površinu.
-\end{itemize} \cite{ethackandcybersec}
+\item \textbf{Hakeri iz sive zone ({\em Gray gat gacker})} - nešto između prethodna dva tipa, oni traže bezbednosne propuste i kada ih nađu oni obaveštavaju vlasnike sistema o njima i zahtevaju naknadu. Po tome su sličniji etičkim hakerima, samo je razlika u tome što oni nemaju dozvolu za traženje propusta, odnosno nisu zaposleni u tim kompanijama. A problem nastaje najčešće ukoliko vlasnik ne želi da plati naknadu, pa informacije o propustima ''isplivaju'' na površinu.\cite{ethackandcybersec}\\
+\end{itemize} 
 
-"Postoje samo dva tipa kompanija: One koje su već hakovane i one koje će tek biti'' - Robert Mueller, direktor FBI
+
+"{\em Postoje samo dva tipa kompanija: One koje su već hakovane i one koje će tek biti}'' - Robert Mueller, direktor FBI
 \newpage
 
 \section{Etičko hakovanje}	
@@ -101,39 +102,39 @@ Oni između ostalog proveravaju:
 \item Injekcione napade
 \item Promene u sistemu bezbednosti
 \item Izloženost osetljivih podataka
-\item Proboje autenfikacionih protokola
-\item Komponente sistema i mreža koje mogu da se iskoriste kao pristupna tačka
-\end{itemize}  \cite{whatisethacking}
+\item Zaobilaženje autenfikacionih protokola
+\item Komponente sistema i mreža koje mogu da se iskoriste kao pristupna tačka \cite{whatisethacking}
+\end{itemize}  
 
 \subsection{Injekcioni napadi}
  Pod injekcijom se smatra iskorišćavanje baga u softveru koji je prouzrokovan nevalidnim podacima, odnosno umetanjem koda koji će se izvršavati umesto nekog validnog unosa i time promeni tok izvršavanja softvera. U odnosu na mesto “injekcije” delimo ih na sql, xss, nativne (programske, sistemske) i druge.
  \begin{itemize}
- \item SQL ({\em Structured Query Language})  SQL je jezik koji služi za komunikaciju sa bazom podataka.
+ \item SQL ({\em Structured Query Language}) napadi:  SQL je jezik koji služi za komunikaciju sa bazom podataka.
 Napadač će pokušati da manipuliše upitom koji se pošalje bazi podataka i na taj način izvrši umetnute komande.
 Pri uspešnom izvršavanju, dobija se odgovor u vidu tabele (osetljivih podataka korisnika, administratora ...)
-\item XSS ({\em Cross-Site Scripting})  Ako aplikacija u svom ispisu podataka koristi nešto što joj korisnik upiše, otvara se prostor za ovaj tip napada. Kod koji je najčešće u JavaScript se ubaci pri ispisu i moguće je da on trajno promeni webstranicu ako ona nema dobru validaciju. Posledica je sajt koji može da prikuplja podatke od posetioca, menja kolačiće i dr.
-\item Nativne ({\em Native}) Ako je napadač upoznat sa kodom i načinom izvršavanja programa ili sistema. On može da iskoristi to znanje i u delovima koji nisu najbolje obezbeđeni da ubaci svoj kod. Posledice mogu biti od blagih do totalne kontrole u zavisnosti od koda.
-\end{itemize} \cite{injectionattacks}
+\item XSS ({\em Cross-Site Scripting}) napadi:  Ako aplikacija u svom ispisu podataka koristi nešto što joj korisnik upiše, otvara se prostor za ovaj tip napada. Kod koji je najčešće u programskom jeziku JavaScript se ubaci pri ispisu i moguće je da on trajno promeni webstranicu ako ona nema dobru validaciju. Posledica je sajt koji može da prikuplja podatke od posetioca, menja kolačiće i izvršava gotovo bilo šta što napadač želi.
+\item Nativni ({\em Native}) napadi:  Ako je napadač upoznat sa kodom i načinom izvršavanja programa ili sistema. Napadač može da iskoristi to znanje i u delovima koji nisu najbolje obezbeđeni, to jest da doda svoj kod. Posledice mogu biti od blagih do totalne kontrole u zavisnosti od koda.\cite{injectionattacks}
+\end{itemize} 
 
 \newpage
 \subsection{Promene u sistemu bezbednosti}
- Svaka promena polise koja se tiče bezbednosti mora biti detaljno testirana kako bi se obezbedilo siguran rad aplikacije. Pod promenama u sistemu se smatra bilo šta što menja trenutni tok podataka
+ Svaka promena polise koja se tiče bezbednosti mora biti detaljno testirana kako bi se obezbedio siguran rad aplikacije. Pod promenama u sistemu se smatra bilo šta što menja trenutni tok podataka
  
 \subsection{Izloženost osetljivih podataka}
 Pod osetljivim podacima, smatraju se svi oni podaci kojima se može identifikovati pojedinac. Etički haker će u ovom delu videti koliko su dobro čuvani podaci, odnosno koliko je jednostavno do njih doći. Jedan od načina bezbednog čuvanja podataka je da su podaci enkriptovani nekom metodom gde bi i u slučaju dobijanja tih podataka bilo neophodno dešifrovanje. 
 
-\subsection{Proboje autenfikacionih protokola}
-Autenfikacioni protokol je tip protokola koji služi za prenos podataka o autentifikaciji između servera i korisnika. Sastoji se od cetiri pravila koja se moraju poštovati: 
+\subsection{Zaobilaženje autenfikacionih protokola}
+Autenfikacioni protokol je tip protokola koji služi za prenos podataka o autentifikaciji između servera i korisnika. Sastoji se od četiri pravila koja se moraju poštovati: 
 \begin{itemize}
 \item Svi učesnici u protokolu znaju kakav je protokol
 \item Ne sme se odstupati od protokola
 \item Svaki korak protokola mora biti jasno definisan
-\item Mora postojati akcija za svaki mogući scenario
+\item Mora postojati akcija za svaki mogući scenario \cite{authprotocolscrypto} \cite{authprotocolswiki}
 \end{itemize}
-\cite{authprotocolscrypto} \cite{authprotocolswiki}
+
 
 \subsection{Komponente sistema i mreža koje mogu da se iskoriste kao pristupna tačka}
-Pristupna tačka je bilo koja komponenta mreže ili sistema kroz koju svi korisnici moraju proći kako bi razmenili podatke. U kućnoj varijanti je to switch, ruter i wireless antena i da bi ste pristupili internetu vi morate proći kroz sve te uredjaje. Kod napada na pristupne tačke haker klonira jedan od tih uređaja i predstavlja se kao on. Postoje razne vrste napada u odnosu na način kloniranja: Man in the Middle (posrednik), Evil Twin (zli blizanac)...
+Pristupna tačka je bilo koja komponenta mreže ili sistema kroz koju svi korisnici moraju proći kako bi razmenili podatke. U kućnoj varijanti je to switch, ruter i wireless antena i da bi ste pristupili internetu vi morate proći kroz sve te uređaje. Kod napada na pristupne tačke haker klonira jedan od tih uređaja i predstavlja se kao on. Postoje razne vrste napada u odnosu na način kloniranja: Man in the Middle (posrednik), Evil Twin (zli blizanac)...
 \newpage
 
 \section{Algoritam rada etičkog hakera}
@@ -141,7 +142,7 @@ Pristupna tačka je bilo koja komponenta mreže ili sistema kroz koju svi korisn
 Pronalaženje sigurnosnih propusta zahteva dosta vremena i strpljenja. Tipičan način rada zahteva od hakera da zaobiđe autorizacione i autentifikacione mehanizme, skenira mrežu i potraži sigurnosne greške. Proces je dodatno teži jer zlonamerni hakeri svakodnevno pronalaze nove načine za iskorišćavanje sigurnosnih procesa, pa se samim tim i način zaštite menja.
 Da bi pronašli sigurnosne propuste, etički hakeri preduzimaju sledeće korake:
 \begin{itemize}
-\item \textbf{Izviđanje ({\em Reconnaissance})} - Pre nego što se sprovedu bilo kakvi testovi bezbednosnih propusta, mora se ''izvideti teren''. Izviđanje je pripremna faza u kojoj haker dokumentuje zahteve organizacije, pronalazi konfiguracione i pristupne informacije sistema i gleda od kojih delova se sastoji mreža. Neke od stvari koje su dokumentovane: servisi na mreži, serveri, IP adrese, imena i kredencijali osoba na mreži i fizičke logacije uređaja.
+\item \textbf{Izviđanje ({\em Reconnaissance})} - Pre nego što se sprovedu bilo kakvi testovi bezbednosnih propusta, mora se ''izvideti teren''. Izviđanje je pripremna faza u kojoj haker dokumentuje zahteve organizacije, pronalazi konfiguracione i pristupne informacije sistema i gleda od kojih delova se sastoji mreža. Neke od stvari koje su dokumentovane: servisi na mreži, serveri, IP adrese, imena i sifre osoba na mreži i fizičke logacije uređaja.
 \item \textbf{Skeniranje ({\em Scanning})} - U ovoj fazi, skenira se mreža i identifikuju se potencijalne slabe tačke. Ovo uključuje skeniranje svih uređaja, korisnika, servisa unutar mreže korišćenjem automatskih alata za skeniranje. Ti alati sprovode tri tipa skeniranja, a to su:
 \begin{itemize}
 \item Mapiranje mreže  ({\em Network mapping})  - otkrivanje topologije mreže, informacija o serveru, ruterima i zaštitima unutar mreže. Kada se ovo završi može se vizualizovati mreža i napraviti plan o daljim postupcima.
