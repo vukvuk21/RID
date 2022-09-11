@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.4.22)  8 AUG 2022 16:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2022.4.22)  10 SEP 2022 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -842,6 +842,12 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+Overfull \hbox (1.80629pt too wide) in paragraph at lines 18--18
+ [][] [][][][]\OT1/cmr/m/n/10 Clan 303: Spre^^Tcavanje i ograni^^Tcavanje pris-
+tupa javnoj ra^^Tcunarskoj 
+ []
+
+
 ! LaTeX Error: Encoding scheme `T2A' unknown.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -941,12 +947,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--57
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
 
 
 ! LaTeX Error: Encoding scheme `T2A' unknown.
@@ -955,8 +966,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 \end{itemize}
-                  
+l.71 \item 2
+            016 - Wikileaks
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -968,8 +979,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 \end{itemize}
-                  
+l.71 \item 2
+            016 - Wikileaks
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -982,7 +993,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \newpage
+l.75 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -995,7 +1006,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \newpage
+l.75 \newpage
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1009,7 +1020,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.75 \section{Ko su hakeri?}
+l.78 \section{Ko su hakeri?}
                             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1022,7 +1033,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \subsection{White hat}
+l.83 \subsection{White hat}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1035,7 +1046,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 ...iste takozvano eti훾ko hakovanje\footnote{
+l.85 ...iste takozvano eti훾ko hakovanje\footnote{
                                                   Eti훾ko hakovanje je hakov...
 
 Your command was ignored.
@@ -1049,7 +1060,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 ...estvuju u pravljenju sigurnosnih sistema.}
+l.85 ...estvuju u pravljenju sigurnosnih sistema.}
                                                    kojim pronalaze propuste ...
 
 Your command was ignored.
@@ -1063,7 +1074,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 ...estvuju u pravljenju sigurnosnih sistema.}
+l.85 ...estvuju u pravljenju sigurnosnih sistema.}
                                                    kojim pronalaze propuste ...
 
 Your command was ignored.
@@ -1071,7 +1082,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
 
  []
 
@@ -1082,7 +1093,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \subsection{Black hat}
+l.94 \subsection{Black hat}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1095,7 +1106,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \subsection{Grey hat}
+l.112 \subsection{Grey hat}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1108,7 +1119,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 \subsection
+l.114 \subsection
                  {Script Kiddie}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1121,7 +1132,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 \subsection
+l.114 \subsection
                  {Script Kiddie}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1135,7 +1146,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.111 \subsection{Script Kiddie}
+l.114 \subsection{Script Kiddie}
                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1148,7 +1159,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \newpage
+l.116 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1161,7 +1172,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \newpage
+l.116 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1175,7 +1186,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \section{Najpoznatiji hakeri}
+l.120 \section{Najpoznatiji hakeri}
                                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1188,7 +1199,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 \subsection{Anonymous}
+l.123 \subsection{Anonymous}
                             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1201,7 +1212,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 \begin{figure}[h!]
+l.130 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1210,7 +1221,7 @@ or  <return>  to continue without it.
 <anonymous.jpg, id=143, 1987.425pt x 1118.1775pt>
 File: anonymous.jpg Graphic file (type jpg)
 <use anonymous.jpg>
-Package pdftex.def Info: anonymous.jpg  used on input line 129.
+Package pdftex.def Info: anonymous.jpg  used on input line 132.
 (pdftex.def)             Requested size: 198.75414pt x 111.8243pt.
 
 ! LaTeX Error: Encoding scheme `T2A' unknown.
@@ -1219,7 +1230,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137  \subsection{Adrian Lamo}
+l.140  \subsection{Adrian Lamo}
                                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1232,7 +1243,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \begin{figure}[h!]
+l.142 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1241,7 +1252,7 @@ or  <return>  to continue without it.
 <adrian.jpg, id=145, 1429.34pt x 1072.005pt>
 File: adrian.jpg Graphic file (type jpg)
 <use adrian.jpg>
-Package pdftex.def Info: adrian.jpg  used on input line 141.
+Package pdftex.def Info: adrian.jpg  used on input line 144.
 (pdftex.def)             Requested size: 142.94237pt x 107.20677pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1253,7 +1264,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \newpage
+l.152 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1266,7 +1277,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \newpage
+l.152 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1280,7 +1291,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 \subsection{Albert Gonzales}
+l.153 \subsection{Albert Gonzales}
                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1293,7 +1304,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 \begin{figure}[h!]
+l.155 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1302,7 +1313,7 @@ or  <return>  to continue without it.
 <albert.jpg, id=155, 481.8pt x 361.35pt>
 File: albert.jpg Graphic file (type jpg)
 <use albert.jpg>
-Package pdftex.def Info: albert.jpg  used on input line 154.
+Package pdftex.def Info: albert.jpg  used on input line 157.
 (pdftex.def)             Requested size: 120.44969pt x 90.33728pt.
 
 ! LaTeX Error: Encoding scheme `T2A' unknown.
@@ -1311,7 +1322,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 \subsection{Jeanson James Ancheta}
+l.164 \subsection{Jeanson James Ancheta}
                                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1324,7 +1335,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \begin{figure}[h!]
+l.166 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1333,7 +1344,7 @@ or  <return>  to continue without it.
 <james.jpg, id=157, 276.03125pt x 345.29pt>
 File: james.jpg Graphic file (type jpg)
 <use james.jpg>
-Package pdftex.def Info: james.jpg  used on input line 165.
+Package pdftex.def Info: james.jpg  used on input line 168.
 (pdftex.def)             Requested size: 82.81pt x 103.58778pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1345,7 +1356,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \newpage
+l.175 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1358,7 +1369,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \newpage
+l.175 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1372,7 +1383,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.174 \subsection{Michael Calce}
+l.177 \subsection{Michael Calce}
                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1385,7 +1396,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.176 \begin{figure}[h!]
+l.179 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1394,7 +1405,7 @@ or  <return>  to continue without it.
 <michael.jpg, id=165, 1204.5pt x 1204.5pt>
 File: michael.jpg Graphic file (type jpg)
 <use michael.jpg>
-Package pdftex.def Info: michael.jpg  used on input line 178.
+Package pdftex.def Info: michael.jpg  used on input line 181.
 (pdftex.def)             Requested size: 120.45705pt x 120.45705pt.
 
 ! LaTeX Error: Encoding scheme `T2A' unknown.
@@ -1403,7 +1414,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 \subsection{Astra}
+l.188 \subsection{Astra}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1416,7 +1427,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \begin{figure}[h!]
+l.190 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1425,7 +1436,7 @@ or  <return>  to continue without it.
 <astra.jpg, id=167, 747.79375pt x 446.66875pt>
 File: astra.jpg Graphic file (type jpg)
 <use astra.jpg>
-Package pdftex.def Info: astra.jpg  used on input line 189.
+Package pdftex.def Info: astra.jpg  used on input line 192.
 (pdftex.def)             Requested size: 149.55609pt x 89.33215pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1437,7 +1448,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \newpage
+l.197 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1450,7 +1461,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \newpage
+l.197 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1464,16 +1475,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 \section{Kazne za hakere}
+l.198 \section{Kazne za hakere}
                                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (25.38959pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/10 Kazne za hakere reg-ulisane su u okviru Kriv-ic-nog za-kona Re-
-pub-like Sr-bije.Obuhvacene
+Overfull \hbox (25.38959pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/10 Kazne za hakere reg-ulisane su u okviru Krivi^^Tcnog za-kona Re
+-pub-like Sr-bije.Obuhva^^Scene
  []
 
 
@@ -1483,16 +1494,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 ... mre탑i ili elektronskoj obradi podataka}
+l.201 ... mre탑i ili elektronskoj obradi podataka}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (50.71677pt too wide) in paragraph at lines 198--198
-[]\OT1/cmr/bx/n/12 Clan 302:Neovla^^Ts^^Sceni pristup za^^Tsti^^Scenom ra^^Tcun
-aru,ra^^Tcunarskoj
+Overfull \hbox (55.96677pt too wide) in paragraph at lines 201--201
+[][]\OT1/cmr/bx/n/12 Clan 302: Neovla^^Ts^^Sceni pristup za^^Tsti^^Scenom ra^^T
+cunaru,ra^^Tcunarskoj
  []
 
 
@@ -1502,16 +1513,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 ...anje pristupa javnoj ra훾unarskoj mre탑i}
+l.207 ...anje pristupa javnoj ra훾unarskoj mre탑i}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (3.36172pt too wide) in paragraph at lines 206--207
-[]\OT1/cmr/m/n/10 Ko neovla^^Tsceno spre^^Tcava ili ometa pristup javnoj ra^^Tc
-unarskoj mre^^Tzi, kazni^^Sce
+Overfull \hbox (3.36172pt too wide) in paragraph at lines 209--210
+[]\OT1/cmr/m/n/10 Ko neovla^^Ts^^Sceno spre^^Tcava ili ometa pristup javnoj ra^
+^Tcunarskoj mre^^Tzi, kazni^^Sce
  []
 
 
@@ -1521,20 +1532,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 ...∞놽nje ra훾unara ili ra훾unarske mre탑e}
+l.212 ...∞놽nje ra훾unara ili ra훾unarske mre탑e}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (8.96118pt too wide) in paragraph at lines 209--209
-[]\OT1/cmr/bx/n/12 Clan 304:Neovla^^Ts^^Sceno kori^^Ts^^Scenje ra^^Tcunara ili 
-ra^^Tcunarske
+Overfull \hbox (14.21118pt too wide) in paragraph at lines 212--212
+[][]\OT1/cmr/bx/n/12 Clan 304: Neovla^^Ts^^Sceno kori^^Ts^^Scenje ra^^Tcunara i
+li ra^^Tcunarske
  []
 
 
-Overfull \hbox (1.1396pt too wide) in paragraph at lines 211--212
+Overfull \hbox (1.1396pt too wide) in paragraph at lines 214--215
 \OT1/cmr/m/n/10 sebi ili dru-gom prib-avi pro-tivpravnu imovin-sku ko-rist, kaz
 ni^^Sce se nov^^Tcanom
  []
@@ -1546,7 +1557,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 \begin{figure}[h!]
+l.217 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1555,7 +1566,7 @@ or  <return>  to continue without it.
 <roman.jpeg, id=173, 227.85126pt x 222.8325pt>
 File: roman.jpeg Graphic file (type jpg)
 <use roman.jpeg>
-Package pdftex.def Info: roman.jpeg  used on input line 216.
+Package pdftex.def Info: roman.jpeg  used on input line 219.
 (pdftex.def)             Requested size: 68.3559pt x 66.85027pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1567,7 +1578,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \newpage
+l.224 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1580,7 +1591,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \newpage
+l.224 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1594,7 +1605,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.233 \section{Zaklju훾ak}
+l.236 \section{Zaklju훾ak}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1607,7 +1618,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 \newpage
+l.243 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1620,7 +1631,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 \newpage
+l.243 \newpage
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1634,25 +1645,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 \begin{thebibliography}{9}
+l.254 \begin{thebibliography}{9}
                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 []\OT1/cmr/m/n/10 https://cybernews.com/security/brief-history-of-cybersecurity
 -and-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 []\OT1/cmr/m/n/10 https://www.kaspersky.com/resource-center/threats/top-ten-gre
 atest-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
 
 ! LaTeX Error: Encoding scheme `T2A' unknown.
 
@@ -1660,7 +1671,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.278 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1673,7 +1684,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \end{document}
+l.278 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1684,28 +1695,28 @@ ry}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.275 \end{document}
+l.278 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (./HakovanjeSeminarski.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `HakovanjeSeminarski.out' has not changed.
-(rerunfilecheck)             Checksum: F2CE8A17850E1343C0D77C4A0CFD3C8D;3328.
+(rerunfilecheck)             Checksum: 059840346E5884260DCF6A2F7487D5AE;3361.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
  ) 
 Here is how much of TeX's memory you used:
  9350 strings out of 494923
  128488 string characters out of 6180742
- 199081 words of memory out of 5000000
+ 199111 words of memory out of 5000000
  12551 multiletter control sequences out of 15000+600000
  8194 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,8n,28p,754b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,28p,758b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1716,7 +1727,7 @@ pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb>
-Output written on HakovanjeSeminarski.pdf (12 pages, 793889 bytes).
+Output written on HakovanjeSeminarski.pdf (12 pages, 794889 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  207 compressed objects within 3 object streams
