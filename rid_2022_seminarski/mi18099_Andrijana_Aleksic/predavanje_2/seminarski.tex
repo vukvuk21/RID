@@ -68,18 +68,18 @@ karcinoma\\
 
 \section{Uvod}
 \label{sec:uvod}
-Nova tehnologija dubokog učenja koja je najzastupljenija u računarskim naukama (computer science), sada ima i razvija primene u mnogim drugim granama kao što su robotika, snimanje karcinoma, procesiranje jezika (prirodnih), računarski vid.\cite{goodfellow}.
+Nova tehnologija dubokog učenja koja je najzastupljenija u računarskim naukama \emph{(computer science)}, sada ima i razvija primene u mnogim drugim granama kao što su robotika, snimanje karcinoma, procesiranje prirodnih jezika, računarski vid i slično.\cite{goodfellow}.
 U domenu mašinskog učenja, duboko učenje je porodica računarskih metoda koja omogućava algoritmu da programira sebe učeći na velikom skupu primera koji demonstriraju željeno ponašanje, uklanjajući potrebu za eksplicitnim definisanjem pravila \cite{lafrate}.
 
-Cilj ovog rada je da se analiziraju studije tehnologija dubokog učenja u snimanju karcinoma i studija koje mogu da podstaknu promenu primenjivanih tehnologija u kliničkoj onkologiji i poboljšaju dijagnostiku i lečenje karcinoma.
+Cilj ovog rada je da se analiziraju studije tehnologija dubokog učenja u snimanju karcinoma i analiziraju studija koje mogu da podstaknu promenu primenjivanih tehnologija u kliničkoj onkologiji i poboljšaju dijagnostiku i lečenje karcinoma.
 
-Rad će se fokusirati na studije slučaja primene tahnologija dubokog učenja na detekciju karcinoma pluća i grudi koji su dve najuticajnije bolesti u društvu. 
+Rad će se fokusirati na studije slučaja primene tehnologija dubokog učenja na detekciju karcinoma pluća i grudi koji su dve najuticajnije bolesti u društvu. 
 
-Takođe, rad će analizirati stanje novih tehnologija za tri vrste karcinoma (pluća, grudi, štitna žlezda) i izvore ovih novih tehnologija na nivou polja istraživanja na kojim nastaju, univerziteta i država koje imaju najveću naučnu proizvodnju. 
+Takođe, rad će analizirati stanje novih tehnologija za tri vrste karcinoma (pluća, grudi, štitna žlezda) i izvore ovih novih tehnologija na nivou polja istraživanja kojima nastaju, univerziteta i država koje imaju najveću naučnu proizvodnju. 
 
 Diskusija na kraju rada prikazaće socio-ekonomske barijere za primenu novih tehnologija dubokog učenja u medicini.
 
-Vrednost ovih istraživanja je u tome što prikazuje da nove tehnologije mogu doprineti poboljšanju lečenju karcinoma, ali zahteva dodatnu velidaciju, ponovljivost i mogućnost uopštenja primenjivih tehnika.
+Vrednost ovih istraživanja je u tome što prikazuje da nove tehnologije mogu doprineti poboljšanju lečenju karcinoma, ali zahteva dodatnu validaciju, ponavljanje eksperimenata i izračunavanja i mogućnost uopštenja primenjivih tehnika.
 
 \section{Studije slučaja}
 \label{sec:naslov1} 
@@ -95,25 +95,25 @@ Prikazane su dve studije slučaja algoritama dubokog učenja u snimanju karcinom
 \label{subsec:podnaslov1}
 
 
-Karcinom pluća je jedna od glavnih bolesti u ogromnom broju država i glavni uzrok smrti u odnosu na oba pola. Karcinom pluća izazivaju pušenje, pasivno pušenje, zagađenje vazduha, itd. Mortalitet ovog karcinoma je visok i stopa preživljanja pacijenta u roku od 5 godina iznosi 2-10\% \cite{bray}. Detekcija tipa karcinoma i mutacije je kritični dijagnostički proces za omogućivanje adekvatnog lečenja \cite{coccia}.
+Karcinom pluća je jedna od glavnih bolesti u ogromnom broju država i glavni uzrok smrti u odnosu na oba pola. Karcinom pluća izazivaju pušenje, pasivno pušenje, zagađenje vazduha, itd. Mortalitet ovog karcinoma je visok i stopa preživljanja pacijenta u roku od 5 godina iznosi 2-10\% \cite{bray}. Detekcija tipa karcinoma i mutacije je kritični dijagnostički proces za omogućavanje adekvatnog lečenja \cite{coccia}.
 
 Trenutni pristup precizne dijagnoze zasniva se na molekularnim biomarkerima na plućnoj biopsiji i testovima krvi. Ovaj pristup može da precizno dijagnostifikuje tip i mutaciju karcinoma pluća, ali ima i negativnih strana. Metode zahtevaju invazivne hiruške zahvate, vreme čekanja do početka lečenja može premašiti mesec dana, takođe, bolnicama predstavlja veliki trošak zbog potreba biopsije i odgovarajuće opreme.
 
-U \cite{coudray} je razvijen model dubokog učenja za automatsku analizu snimaka tumora koristeći javno dostupne snimke iz \emph{Atlasa genoma kancera}. Model vrši trostruku klasifikaciju u klase normalnog tkiva, plućnog adenokarcinoma i rožnatog plućnog karcinoma. Njegovi rezultati su upoređeni sa rezultatima troje patologa koji klasifikovali isti skup podataka na osnovu vizualne inspekcije. Performanse modela su bile uporedive sa performansama patologa, što je dokazalo da ove tehnologije mogu da asistiraju patolozima u detekciji podtipova karcinoma. Primenom ove metode može se smanjiti cena dijagnoze i omogućiti siromašnijim regionima da dođu do dobrih dijagnoza slanjem snimaka tumora.
+U \cite{coudray} je razvijen model dubokog učenja za automatsku analizu snimaka tumora koristeći javno dostupne snimke iz \href{https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga}{Atlasa genoma kancera}. Model vrši trostruku klasifikaciju u klase normalnog tkiva, plućnog adenokarcinoma i rožnatog plućnog karcinoma. Njegovi rezultati su upoređeni sa rezultatima troje patologa koji su klasifikovali isti skup podataka na osnovu vizuelne inspekcije. Performanse modela su bile uporedive sa  brzinom rada patologa, što je dokazalo da ove tehnologije mogu da asistiraju patolozima u detekciji podtipova karcinoma. Primenom ove metode može se smanjiti cena dijagnostikovanja i omogućiti siromašnijim regionima da dođu do dobrih dijagnoza slanjem snimaka tumora.
 
 \newpage
 \subsection{Duboko učenje za detekciju metastaze kod karcinoma dojke}
 \label{subsec:podnaslov2}
 
-Karcinom dojke je najčešći oblik među ženama. Studije rađene u naprednijim zemljama pokazuju da je sve veći broj obolelih od ove bolesti. Ovo može biti prouzrokovano ishranom, većim korišćenjem hormonskih terapija, oralnih kontraceptiva, kasnijim trudnoćama. \cite{coccia2}.
+Karcinom dojke je najčešći oblik karcinoma među ženama. Studije rađene u naprednijim zemljama pokazuju da je sve veći broj obolelih od ove bolesti. Ovo može biti prouzrokovano ishranom, većim korišćenjem hormonskih terapija, oralnih kontraceptiva, kasnijim trudnoćama. \cite{coccia2}.
 
-Metod biopsije dojki se koristi za dijagnozu svih tipova, stadijuma i mutacija karcinoma dojki, kao i kod drugih karcinoma.Osetljivost evaluacije limfnih čvorova od strane patologa nije optimalni proces odlučivanja. Neka istraživanja pokazuju da patološko razmatranje pogreši status limfnih čvorova kod 24\% pacijenata. Ovo se dešava zbog težine ljudskog odlučivanja u kompleksnim okolnostima. Dodatno, cena pregleda može biti skupa.
+Metod biopsije dojki se koristi za dijagnozu svih tipova, stadijuma i mutacija karcinoma dojki, kao i kod drugih karcinoma. Osetljivost evaluacije limfnih čvorova od strane patologa nije optimalni proces odlučivanja. Neka istraživanja pokazuju da patološko razmatranje pogrešno dijaknostikuje status limfnih čvorova kod 24\% pacijenata. Ovo se dešava zbog težine ljudskog odlučivanja u kompleksnim okolnostima. Dodatno, cena pregleda može biti skupa usled raznih faktora, poput medicinskog osoblja koje radi, aparature koja je skupa.
 
-U \cite{ehteshami} otkriva se algoritam dubokog učenja koji je pokazao bolje performanse nego panel od 11 patologa koji su učestvovali u simulacionoj vežbi koja je dizajnirana da replicira rutinu patološkog rada. Dakle, eksperiment pokazuje da bi algoritam dubokog učenja mogao da identifikuje metastaze u limfnim čvorovima sa osetlljivošću od 100\%, dok je 40\% snimaka bez metastaza identifikovano korektno. Ovi rezultati bi mogli da se koriste u praksi kao deo organizacije kliničke prakse kako bi se smanjilo opterećenje patologa i poboljšalo njihovo odlučivanje vezano za adekvatnu terapiju.
+U radu \emph{Diagnostic Assessment of Deep Learning} \cite{ehteshami} otkriva se algoritam dubokog učenja koji je pokazao bolje performanse nego panel od 11 patologa koji su učestvovali u simulacionoj vežbi koja je dizajnirana da replicira rutinu patološkog rada. Dakle, eksperiment pokazuje da bi algoritam dubokog učenja mogao da identifikuje metastaze u limfnim čvorovima sa osetlljivošću od 100\%, dok je 40\% snimaka bez metastaza identifikovano korektno. Ovi rezultati bi mogli da se koriste u praksi kao deo organizacije kliničke prakse kako bi se smanjilo opterećenje patologa i poboljšalo njihovo odlučivanje vezano za adekvatnu terapiju.
 
 
 \newpage
-\section{Metode i Rezultati}
+\section{Metode i rezultati}
 \label{sec:analiza}
 
 
@@ -121,8 +121,8 @@ U \cite{ehteshami} otkriva se algoritam dubokog učenja koji je pokazao bolje pe
 \subsection{Metode}
 \label{subsec:podnaslov3}
 
-Ova studija, kao sto je pomenuto se bazirala na proucavanju primene algoritama dubokog ucenja za dva tipa karcinoma.
-Korišćeni su podaci sa sajta ScienceDirect (2019). Na tom sajtu su upotrebljeni napredni algoritmi koji su izdvajali podatke pretraživanjem ključnih reči:
+Postoji studija, koje se bazirala na proučavanju primene algoritama dubokog učenja za dva tipa karcinoma.
+Korišćeni su podaci sa sajta \href{https://www.sciencedirect.com/}{\emph{ScienceDirect}} (2019). Na tom sajtu su upotrebljeni napredni algoritmi koji su izdvajali podatke pretraživanjem narednih ključnih reči:
 
 \begin{itemize}
     \item ``Deep learning" i ``lung cancer"
@@ -130,7 +130,7 @@ Korišćeni su podaci sa sajta ScienceDirect (2019). Na tom sajtu su upotrebljen
     \item ``Deep learning" i ``thyroid cancer"
 \end{itemize}
 
-Odnos između broja istraživannja i godina je analiziran pomoću OLS (ordinary least squares) metode za procenu nepoznatih parametara u modelu linearne regresije.
+Odnos između broja istraživanja i godina koje su protekle otkad se istrazuje na ovu temu je analiziran pomoću OLS (ordinary least squares) metode za procenu nepoznatih parametara u modelu linearne regresije.
 
 Kao rezulatate, model daje: regresione keoficijente, prilagođen \begin{math}R^2\end{math}, standardnu grešku i procenjenu varijacionu tabelu.
 
@@ -268,22 +268,22 @@ Ova četiri dijagrama (7-10) pokazuju da razvijanje tehnologija dubokog učenja 
 \section{Zaključak}
 \label{sec:diskusija}
 
-Tehnologije dubokog učenja mogu da daju podršku kliničkom procesu interpretacija snimaka, omogućavajući patolozima da preusmere svoju pažnju ka kritičkim odlukama i lečenju.
+Tehnologije dubokog učenja mogu da daju podršku kliničkom procesu interpretacije snimaka, omogućavajući patolozima da preusmere svoju pažnju ka kritičkim odlukama i lečenju.
 
 U medicini, radiologija je prešla na digitalno snimanje i dobro je pozicionirana za primenu tehnologija dubokog učenja. Više istraživanja govori da detekcija uz pomoć računara pomaže radiolozima da evaluiraju razne vrste snimaka, uključujući mamografske snimke, tomografske snimke pluća i snimke magnetne rezonance mozga.
 
 U kontrastu sa radiologijom, patologija kasni sa prisvajanjem digitalnog snimanja i dijagnostike uz pomoć računara. Ipak, pojava tehnologija dubokog učenja i smanjena cena digitalnog snimanja može podržati promenu na tom polju.
 
-Rezultati ove naučne analiza pokazuju da:
+Rezultati ove naučne analize pokazuju da:
 
 \begin{enumerate}
   \item istraživanja dubokog učenja za karcinom pluća i dojki raste brže od onih za karcinom štitne žlezde
-  \item nagli porast broja istraživanja je prouzrokovan velikom stopom smrtnosti karcinoma pluća i dojki
+  \item nagli porast broja istraživanja je prouzrokovan velikom stopom od smrtnosti karcinoma pluća i dojki
   \item izvori istraživanja dubokog učenja dolaze iz polja medicine, računarskih nauka, inženjeringa i nauka o meterijalima
   \item produkcija naučnih istraživanja je koncentrisana u državama: SAD, Kina, Indija, Južna Koreja, Ujedinjeno Kraljevstvo i Holandija
 \end{enumerate} 
 
-Ipak, postoje barijere primene tehnologija dubokog učenja, poput organizacione barijere (u proces rada bolnica potrebno je uključiti novu opremu, istraživačko osoblje, proces za čuvanje podataka digitalne patologije); ekonomske barijere (cena dodatnih tahnoloških uređaja može biti ogromna);
+Postoje barijere primene tehnologija dubokog učenja, poput organizacione barijere (u proces rada bolnica potrebno je uključiti novu opremu, istraživačko osoblje, proces za čuvanje podataka digitalne patologije); ekonomske barijere (cena dodatnih tehnoloških uređaja može biti ogromna);
 barijere ljudskih resursa (ljudski kapital i edukacija biće najveći izazov za čije savladavanje će biti potrebno najviše vremena).
 
 
