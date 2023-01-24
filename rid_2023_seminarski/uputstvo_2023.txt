@@ -1,0 +1,10 @@
+Uputstva za izradu seminarskog pogledajte na https://bitbucket.org/racunarstvoidrustvo/seminarski/src/master/
+
+1. Kreirajte folder sledećeg naziva: indeks_prezime_ime (u obliku mi18123_Petrovic_Petar)
+
+2. U okviru Vašeg foldera postavite:
+     - pdf prezentacije
+     - link na prezentaciju ili originalni oblik prezentacije
+     - poster
+     - pdf seminarskog rada
+     - izvorni tex dokument seminarskog rada
